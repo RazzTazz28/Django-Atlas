@@ -1,0 +1,75 @@
+{% extends 'accounts/base.html' %}
+
+{% block title %}One For All{% endblock %}
+{% load static %}
+<!-- importing css file -->
+{% block style %}<link rel="stylesheet" type="text/css" href="{% static 'css/login.css' %}">{% endblock %}
+
+{% block content %}
+
+    <!-- navigation bar -->
+    <div class="navBar">
+
+        <!-- logo and logo spacers -->        <div class="logo_spacer"></div>
+        <div class="logo"></div>
+
+        <!-- Sign Up Button -->
+        <form class="signUp" action="/register">
+            {% csrf_token %}
+            <input class="signBtn" type="submit" value="Sign Up" />
+        </form>
+
+        <p>Top Menu</p>
+    </div>
+
+    <!-- main body of login page -->
+    <div class="main">
+
+        <!-- left spacer -->
+        <div class="left_spacer"></div>
+
+        <!-- top of form spacer -->
+        <div class="top_spacer">
+            <p class="title">One For All</p>
+        </div>
+
+        <!-- login form -->
+        <form id="loginForm" method="post">
+            {% csrf_token %}
+
+            <!-- login input -->
+            <input readonly onfocus="this.removeAttribute('readonly');" minlength="8" maxlength="50" class="Username" type="text" id="username" name="username" placeholder="Username"/>
+
+            <!-- password input -->
+            <input type="password" id="password" name="password" maxlength="50" class="Password" placeholder="Password" minlength="8" required/>
+
+            <!-- I place the button inside this div, so I can position it under the inputs -->
+            <div class="btn_div">
+
+                <!-- checkbox and checkbox label -->
+                <input  class="checkbox" type="checkbox" id="staylogged" name="staylogged" value="staylogged">
+                <p class="CBLabel"> Stay Logged In.</p>
+
+                <!-- anchor to recover credentials page -->
+                <a href="recover.html" class="recover">Recover Credentials</a>
+
+                <!-- submit button -->
+                <button class="login" type="submit" name="save" value="save">Login</button>
+
+            </div>
+
+        </form>
+
+    </div>
+
+    <!-- bottom side of login page -->
+    <div class="bottom">
+        <p>Bottom</p>
+    </div>
+
+    <!-- scripts -->
+    <script type="text/javascript">
+
+    </script>
+
+{% endblock %}

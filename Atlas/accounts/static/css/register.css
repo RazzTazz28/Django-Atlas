@@ -1,0 +1,81 @@
+/* html and body width & height */
+html, body {
+    height: 100%;
+    width: 100%;
+    padding: 0px;
+    margin: 0px;
+}
+
+/* full page div width & height */
+.content {
+    height: 100%;
+    width: 100%;
+    padding: 0px;
+    margin: 0px;
+}
+
+/* navigation bar css */
+.navBar {
+    box-sizing: border-box;
+    height: 60px;
+    width: 100%;
+    background-color: #000000;
+    padding: 2px;
+    float: left;
+    border: 1px solid #000000;
+}
+
+/* spacer before the logo in navbar */
+.logo_spacer {
+    box-sizing: border-box;
+    background-color: #000000;
+    float: left;
+    height: 99%;
+    width: 1%;
+}
+
+/* logo css */
+.logo{
+    box-sizing: border-box;
+    background-color: #ffffff;
+    float: left;
+    height: 99%;
+    width: 5%;
+}
+
+/* Sign Up button css */
+.signBtn {
+    position: relative;
+    float: right;
+    background-color: #000000;
+    color: #ffffff;
+    top: -3px;
+    width: 120px;
+    height: 60px;
+    border: 1px solid #000000;
+    border-radius: 1px;
+}
+
+.signBtn:hover {
+    color: #66ff66;
+    cursor: pointer;
+}
+
+/* main body css */
+.main {
+    box-sizing: border-box;
+    height: 120%;
+    width: 100%;
+    background-color: #e6ffe6;
+    padding: 20px;
+    float: left;
+}
+
+/* bottom section css */
+.bottom {
+    box-sizing: border-box;
+    background-color: #04AA6D;
+    padding: 20px;
+    float: left;
+    width: 100%;
+}

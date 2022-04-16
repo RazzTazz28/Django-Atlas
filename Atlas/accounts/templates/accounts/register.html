@@ -1,0 +1,57 @@
+{% extends 'accounts/base.html' %}
+
+{% block title %}One For All{% endblock %}
+{% load static %}
+<!-- importing css file -->
+{% block style %}<link rel="stylesheet" type="text/css" href="{% static 'css/register.css' %}">{% endblock %}
+
+{% block content %}
+
+    <!-- navigation bar -->
+    <div class="navBar">
+
+        <!-- logo and logo spacers -->
+        <div class="logo_spacer"></div>
+        <div class="logo"></div>
+
+        <!-- Sign Up Button -->
+
+        <a class="signBtn" href="/login_user">Sign In</a>
+
+        <p>Top Menu</p>
+    </div>
+
+    <!-- main body of login page -->
+    <div class="main">
+
+        <form method="POST" class="form-group">
+            {% csrf_token %}
+            <!-- login input -->
+            {{form_one}}
+            <!-- repeat password input -->
+            <input type="password" id="password1" name="password1" maxlength="50" class="Password1" placeholder="Repeat Password" minlength="8" required/>
+            <h1 id="text"></h1>
+            <div class="form-group">
+                <!-- check if password fields match with js when press Register -->
+                <button id='button' type="submit" class="register">Register</button>
+            </div>
+        </form>
+
+        <div class="login-link">
+            <small
+                class="text-muted">Alredy have an account?<a class="home" href="/login_user">Sign In</a>
+            </small>
+        </div>
+
+    </div>
+
+    <div class="bottom">
+        <p>Bottom</p>
+    </div>
+
+{% endblock %}
+
+{% block js_block %}
+    <script type="text/javascript" src="{% static 'javascript/validatePW.js' %}"></script>
+{% endblock %}
+

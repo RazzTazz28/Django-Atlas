@@ -1,0 +1,220 @@
+/* html and body width & height */
+html, body {
+    height: 100%;
+    width: 100%;
+    padding: 0px;
+    margin: 0px;
+}
+
+/* full page div width & height */
+.content {
+    height: 100%;
+    width: 100%;
+    padding: 0px;
+    margin: 0px;
+}
+
+/* navigation bar css */
+.navBar {
+    box-sizing: border-box;
+    height: 60px;
+    width: 100%;
+    background-color: #000000;
+    padding: 2px;
+    float: left;
+    border: 1px solid #000000;
+}
+
+/* spacer before the logo in navbar */
+.logo_spacer {
+    box-sizing: border-box;
+    background-color: #000000;
+    float: left;
+    height: 99%;
+    width: 1%;
+}
+
+/* logo css */
+.logo{
+    box-sizing: border-box;
+    background-color: #ffffff;
+    float: left;
+    height: 99%;
+    width: 5%;
+}
+
+.signBtn {
+    position: relative;
+    float: right;
+    background-color: #000000;
+    color: #ffffff;
+    top: -3px;
+    width: 120px;
+    height: 60px;
+    border: 1px solid #000000;
+    border-radius: 1px;
+}
+
+.signBtn:hover {
+    color: #66ff66;
+    cursor: pointer;
+}
+
+/* main body css */
+.main {
+    box-sizing: border-box;
+    height: 120%;
+    width: 100%;
+    background-color: #e6ffe6;
+    padding: 20px;
+    float: left;
+}
+
+
+
+/* left spacer css */
+.left_spacer {
+    width: 40%;
+    height: 100%;
+    float: left;
+    box-sizing: border-box;
+    /* background-color: #ffffff; */
+}
+
+/* spacer between navbar and form css */
+.top_spacer {
+    width: 240px;
+    height: 185px;
+    display: inline-block;
+    box-sizing: border-box;
+    text-align: centre;
+    /* background-color: #ffffff; */
+}
+
+/* one for all title in main section css */
+.title {
+    position: relative;
+    top: 50%;
+    left: 30%;
+}
+
+/* username input field css */
+.Username {
+  width: 240px;
+  height: 45px;
+  padding: 12px 20px;
+  display: block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-bottom: 20px;
+}
+
+/* password input field css */
+.Password{
+  width: 240px;
+  height: 45px;
+  padding: 12px 20px;
+  display: block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+/* button, checkbox, checkbox label, recover credentials div css */
+.btn_div {
+    width: 240px;
+    height: 60px;
+    display: inline-block;
+    /* background-color: #ffffff; */
+}
+
+/* checkbox css */
+.checkbox {
+    top: 0px;
+    left: 0px;
+    height: 18px;
+    width: 18px;
+    background-color: #eee;
+}
+
+.checkbox:hover {
+    cursor: pointer;
+}
+
+/* checkbox label css */
+.CBLabel {
+    position: relative;
+    top: -4px;
+    display: inline-block;
+    font-size: 14px;
+}
+
+
+/* recover credentials anchor css */
+.recover {
+    position: relative;
+    color: #0099cc;
+    top: -4px;
+    left: 2px;
+    display: inline-block;
+    font-size: 14px;
+    text-decoration: none;
+}
+
+.recover:hover {
+    color: #66ff66;
+
+}
+
+/* submit button css */
+.login{
+    background-color: #000000;
+    color: #ffffff;
+    width: 140px;
+    height: 45px;
+    padding: 12px 20px;
+    border: 1px solid #FFD700;
+    border-radius: 12px;
+    box-sizing: border-box;
+    margin-left: 49px;
+}
+
+.login:hover {
+    cursor: pointer;
+    color: #66ff66;
+}
+
+/* bottom section css */
+.bottom {
+    box-sizing: border-box;
+    background-color: #04AA6D;
+    padding: 20px;
+    float: left;
+    width: 100%;
+}
+
+
+@media screen and (max-width: 800px) {
+  .left_spacer {
+    box-sizing: border-box;
+    width: 35%; /* The width is 100%, when the viewport is 800px or smaller */
+
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .left_spacer {
+    box-sizing: border-box;
+    width: 30%; /* The width is 100%, when the viewport is 800px or smaller */
+
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .left_spacer {
+    box-sizing: border-box;
+    width: 25%; /* The width is 100%, when the viewport is 800px or smaller */
+
+  }
+}
