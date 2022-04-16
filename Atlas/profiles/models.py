@@ -4,9 +4,9 @@ from accounts.models import NewUser
 
 
 class UserProfile(models.Model):
-    user = models.OneToOneField(settings.AUTH_USER_MODEL, on_delete=models.CASCADE)
+    user = models.OneToOneField(NewUser, on_delete=models.CASCADE, related_name='profile')
 
     avatar = models.ImageField(default='Untitled.png', upload_to='profileIMG/')
 
     def __str__(self):
-        return self.user
+        return str(self.user)
